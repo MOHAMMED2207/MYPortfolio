@@ -28,7 +28,8 @@ const Hero = () => {
             initial={{ transform: "scale(0)" }}
             animate={{ transform: "scale(1.1)" }}
             transition={{ damping: 6, type: "spring", stiffness: 100 }}
-            src="	https://scontent.fcai22-1.fna.fbcdn.net/v/t39.3080…IMwyxWzknODk-doCwAvPBykkREb8tSy2hLS2w&oe=65A73E7B"
+            src="public/img
+/Myphoto.png"
             className="avatar"
             
             alt="MyPhoto"
