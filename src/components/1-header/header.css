@@ -1,0 +1,244 @@
+/* ===========================
+ table of contents
+==============================
+1. Header Design
+2. Button & icon
+3- Modal == pop up
+4- Responsive Design (media query)*/
+
+/* ========================
+    1. Header Design
+=========================== */
+/* header{width: 100%;} */
+.header {
+  gap: 8px;
+  justify-content: space-between;
+  padding: 0px 1rem 0;
+  margin-top: -2px;
+  width: 74%;
+  height: 63px;
+  border-radius: 101px;
+  position: fixed;
+  background: var(--background);
+  backdrop-filter: blur(7px);
+  z-index: 9099999;
+  transition: 0.4s all ease-in;
+}
+.header_sticyy {
+  gap: 8px;
+  justify-content: space-between;
+  padding: 0px 1rem 0;
+  margin-top: -2px;
+  width: 74%;
+  height: 63px;
+  border-radius: 101px;
+  position: absolute;
+  z-index: 9099999;
+  transition: 0.4s all ease-in;
+}
+.linklogo {
+  display: flex;
+  align-items: center;
+  letter-spacing: 3px;
+  gap: 9px;
+}
+
+.linklogo h4 {
+  color: var(--title);
+}
+.linklogo span {
+  padding: 1px 2px;
+  background: darkorange;
+  border-radius: 4px;
+  color: black;
+}
+
+.sec_flex {
+  gap: 8px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header.flex nav {
+  background-color: var(--bgHeader);
+  padding: 0.77rem 1.6rem;
+  border-radius: 55px;
+  box-shadow: 1px 1px 40px #2323242a;
+  overflow: hidden;
+}
+
+header ul.flex {
+  gap: 16px;
+}
+
+header ul li a {
+  color: var(--title);
+  opacity: 0.9;
+  font-size: 0.88rem;
+  font-weight: 500;
+  position: relative;
+}
+header ul li a:hover {
+  color: var(--blue);
+  opacity: 1;
+  font-size: 0.9rem;
+}
+header ul li a.active {
+  color: var(--blue);
+  opacity: 1;
+  font-size: 0.9rem;
+}
+header ul li a.active::after {
+  content: "";
+  width: 75%;
+  bottom: -17px;
+  left: 0px;
+  height: 1px;
+  position: absolute;
+  background-color: var(--blue);
+  padding: 0 6px;
+  box-shadow: 0px 0px 13px 5px var(--blue);
+  border-radius: 100%;
+}
+
+header ul li a.active2 {
+  color: var(--blue);
+  opacity: 1;
+  font-size: 0.9rem;
+}
+header ul li a.active2::after {
+  content: "";
+  width: 0px;
+  left: -34px;
+  bottom: -1px;
+  height: 25px;
+  position: absolute;
+  background-color: var(--blue);
+  box-shadow: 0px 0px 19px 5px var(--blue);
+}
+
+header button {
+  font-size: 1.2rem;
+}
+
+header button.menu {
+  display: none;
+}
+
+/* ========================
+    2. Button & icon
+=========================== */
+header .icon-menu,
+header button.mode {
+  background-color: var(--bgHeader);
+  height: 2.4rem;
+  width: 2.4rem;
+  border-radius: 50%;
+
+  justify-content: center;
+  text-align: center;
+
+  color: var(--subtitle);
+  border: 1px solid rgba(244, 165, 96, 0.249);
+  transition: 0.2s;
+  box-shadow: 1px 1px 40px rgba(35, 35, 36, 0.165);
+}
+
+header .icon-sun {
+  color: rgb(255, 165, 0);
+}
+
+header .icon-menu:hover,
+header button.mode:hover {
+  color: var(--title);
+  border: 1px solid rgb(244, 165, 96);
+}
+
+header .icon-close {
+  font-size: 1.5rem;
+  color: var(--subtitle);
+  transition: 0.3s;
+}
+
+header .icon-close:hover {
+  font-size: 1.7rem;
+  color: crimson;
+  rotate: 180deg;
+}
+
+/* ========================
+    3- Modal == pop up
+=========================== */
+header .fixed {
+  position: fixed;
+  inset: 0;
+  z-index: 11;
+  background-color: rgba(40, 40, 48, 0.91);
+
+  /* filter: blur(8px); */
+  backdrop-filter: blur(4px);
+}
+
+@keyframes mymove {
+  0% {
+    scale: 0;
+  }
+
+  60% {
+    scale: 1.2;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
+
+header .fixed ul.modal {
+  animation: mymove 0.77s 1;
+  width: 75%;
+  margin-inline: auto;
+  overflow: hidden;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  background-color: var(--secondary);
+}
+
+header .fixed ul.modal li {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.77rem;
+  padding-top: 0.5rem;
+}
+
+header .fixed ul.modal li:first-child {
+  text-align: right;
+  border: none;
+  padding-bottom: 0;
+  padding-top: 0.2rem;
+  display: flex;
+  margin-bottom: 0rem;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header .fixed ul.modal li:last-child {
+  border: none;
+}
+
+header .fixed ul.modal li a {
+  font-size: 1rem;
+}
+
+/* =====================================
+  4- Responsive Design (media query)
+======================================== */
+@media (width < 799px) {
+  header.flex nav {
+    display: none;
+  }
+
+  header button.menu {
+    display: block;
+  }
+}
