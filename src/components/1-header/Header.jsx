@@ -49,7 +49,7 @@ const Header = () => {
           initial={{ transform: "scale(0)" }}
           animate={{ transform: "scale(1.1)" }}
           transition={{ damping: 6, type: "spring", stiffness: 100 }}
-          src="http://localhost:5173/public/IMG_0700-modified.png"
+            src="/img/Myphoto.png"
           className="avatar"
           style={{ width: "34px" }}
           alt=""
