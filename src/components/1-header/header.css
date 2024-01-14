@@ -84,17 +84,18 @@
 }
 
 .linklogo h4 {
-  color: var(--title);
-  font-weight: bold;
-  padding: 1px 2px 0px 4px;
-  border-radius: 4px;
-  background: #000000;
+    background: #000;
+    border-radius: 4px;
+    color: #f1f1f1;
+    font-weight: 700;
+    border-radius: 3px 8px 8px 3px;
+    padding: 0px 0px 0px 4px;
 }
 .linklogo span {
-  padding: 1px 2px;
-  background: darkorange;
-  border-radius: 0px 5px 3px 0px;
-  color: black;
+    background: #ff8c00;
+    border-radius: 0px 6px 6px 0;
+    color: #000;
+    padding: 1px 2px 2px 2px;
 }
 
 .sec_flex {
