@@ -40,7 +40,7 @@ export const myProjects = [
     para3: "#js",
     para4: "#bootstrap",
     img: "img/img-pro/Screenshot 2023-08-05 012749.png",
-    link: "https://crud-opration-qy3izztja-mohammed2207.vercel.app/",
+    link: "https://crud-opration-sys.vercel.app/",
   },
 
   {
