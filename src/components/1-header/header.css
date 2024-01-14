@@ -10,20 +10,60 @@
     1. Header Design
 =========================== */
 /* header{width: 100%;} */
+
+.navElement {
+  display: flex;
+  justify-content: center;
+}
 .header {
   gap: 8px;
   justify-content: space-between;
   padding: 0px 1rem 0;
   margin-top: -2px;
-  width: 74%;
+  width: 76%;
   height: 63px;
-  border-radius: 101px;
+  border-radius: 0px 0px 9px 9px;
   position: fixed;
   background: var(--background);
-  backdrop-filter: blur(7px);
+  backdrop-filter: blur(12px);
   z-index: 9099999;
   transition: 0.4s all ease-in;
 }
+
+@media (max-width: 1000px) {
+  .header {
+    gap: 8px;
+    justify-content: space-between;
+    padding: 0px 1rem 0;
+    margin-top: -2px;
+    width: 87%;
+    height: 63px;
+    border-radius: 0px 0px 9px 9px;
+    position: fixed;
+    background: var(--background);
+    backdrop-filter: blur(12px);
+    z-index: 9099999;
+    transition: 0.4s all ease-in;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    gap: 8px;
+    justify-content: space-between;
+    padding: 0px 1rem 0;
+    margin-top: -2px;
+    width: 93%;
+    height: 63px;
+    border-radius: 0px 0px 9px 9px;
+    position: fixed;
+    background: var(--background);
+    backdrop-filter: blur(12px);
+    z-index: 9099999;
+    transition: 0.4s all ease-in;
+  }
+}
+
 .header_sticyy {
   gap: 8px;
   justify-content: space-between;
@@ -45,11 +85,15 @@
 
 .linklogo h4 {
   color: var(--title);
+  font-weight: bold;
+  padding: 1px 2px 0px 4px;
+  border-radius: 4px;
+  background: #000000;
 }
 .linklogo span {
   padding: 1px 2px;
   background: darkorange;
-  border-radius: 4px;
+  border-radius: 0px 5px 3px 0px;
   color: black;
 }
 
