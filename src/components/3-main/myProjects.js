@@ -397,6 +397,6 @@ export const myProjects = [
     para3: "#js",
     para4: "#bootstrap",
     img: "img/img-pro/Screenshot 2023-11-28 212732.png",
-    link: "https://linked-7e5jwy4qr-mohammed2207.vercel.app/",
+    link: "https://linked-in-uj5p.vercel.app/",
   },
 ];
