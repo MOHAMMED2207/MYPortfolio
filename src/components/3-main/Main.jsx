@@ -81,7 +81,12 @@ const Main = () => {
                 key={item.img}
                 className="  card"
               >
-                <img width={266} src={item.img} alt="" />
+              
+                     <a href={item.link} target="blank">
+                                      <img width={266} src={item.img} alt="" />
+                      
+                      </a>
+
 
                 <div style={{ width: "266px" }} className="box">
                   <h1 className="title">{item.title}</h1>
