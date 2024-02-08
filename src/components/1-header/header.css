@@ -48,6 +48,18 @@
 }
 
 @media (max-width: 600px) {
+ .header_sticyy {
+  gap: 8px;
+  justify-content: space-between;
+  padding: 0px 1rem 0;
+  margin-top: -2px;
+  width: 91%;
+  height: 63px;
+  border-radius: 101px;
+  position: absolute;
+  z-index: 9099999;
+  transition: 0.4s all ease-in;
+}
   .header {
     gap: 8px;
     justify-content: space-between;
