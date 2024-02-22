@@ -399,4 +399,17 @@ export const myProjects = [
     img: "img/img-pro/Screenshot 2023-11-28 212732.png",
     link: "https://linked-in-uj5p.vercel.app/",
   },
+   id: 21,
+    category: ["react", "js"],
+
+    title: "Tic Tac Toe Game",
+    title2:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elitdistinctio reiciendis ipsa a esse doloremque ",
+    para1: "#REACT",
+    para2: "#css",
+    para3: "#js",
+    para4: "#bootstrap",
+    img: "img/img-pro/XOGAME.png",
+    link: "https://tic-tac-toe-game-git-main-mohammed2207.vercel.app/",
+  },
 ];
