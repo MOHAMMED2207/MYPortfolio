@@ -399,6 +399,7 @@ export const myProjects = [
     img: "img/img-pro/Screenshot 2023-11-28 212732.png",
     link: "https://linked-in-uj5p.vercel.app/",
   },
+  {
    id: 21,
     category: ["react", "js"],
 
