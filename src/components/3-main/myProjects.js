@@ -425,7 +425,7 @@ export const myProjects = [
     para2: "#css",
     para3: "#js",
     para4: "#bootstrap",
-    img: "img/img-pro/blackboard-inscribed-with-scientific-formulas-calculations.png",
+    img: "img/img-pro/blackboard-inscribed-with-scientific-formulas-calculations22.jpg",
     link: "https://calculator-ios-app-git-main-mohammed2207.vercel.app/",
   },
 ];
