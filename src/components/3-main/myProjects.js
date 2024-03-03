@@ -28,6 +28,7 @@ export const myProjects = [
     img: "img/img-pro/Screenshot 2023-03-27 155815.png",
     link: "https://clone-dffaf.web.app/",
   },
+  
   {
     id: 2,
     category: ["js"],
@@ -412,5 +413,19 @@ export const myProjects = [
     para4: "#bootstrap",
     img: "img/img-pro/XOGAME.png",
     link: "https://tic-tac-toe-game-git-main-mohammed2207.vercel.app/",
+  },
+  {
+    id: 22,
+    category: ["react", "js"],
+
+    title: "Calculator App ios",
+    title2:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elitdistinctio reiciendis ipsa a esse doloremque ",
+    para1: "#REACT",
+    para2: "#css",
+    para3: "#js",
+    para4: "#bootstrap",
+    img: "img/img-pro/blackboard-inscribed-with-scientific-formulas-calculations.png",
+    link: "https://calculator-ios-app-git-main-mohammed2207.vercel.app/",
   },
 ];
