@@ -6,6 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 const Main = () => {
   const [currentActive, setcurrentActive] = useState("all");
   const [arr, setArr] = useState(myProjects);
+  const [Active, setActive] = useState(false);
 
   const handleClick = (buttonCategory) => {
     setcurrentActive(buttonCategory);
@@ -26,6 +27,7 @@ const Main = () => {
       <section className="flex  left-section" id="Projects">
         <button
           onClick={() => {
+            setActive(false);
             setcurrentActive("all");
             setArr(myProjects);
           }}
@@ -36,6 +38,7 @@ const Main = () => {
 
         <button
           onClick={() => {
+            setActive(true);
             handleClick("css");
           }}
           className={currentActive === "css" ? "active" : null}
@@ -45,6 +48,7 @@ const Main = () => {
 
         <button
           onClick={() => {
+            setActive(true);
             handleClick("js");
           }}
           className={currentActive === "js" ? "active" : null}
@@ -53,6 +57,7 @@ const Main = () => {
         </button>
         <button
           onClick={() => {
+            setActive(true);
             handleClick("react");
           }}
           className={currentActive === "react" ? "active" : null}
@@ -61,12 +66,16 @@ const Main = () => {
         </button>
         <button
           onClick={() => {
+            setActive(true);
             handleClick("node");
           }}
           className={currentActive === "node" ? "active" : null}
         >
           Node & Express
         </button>
+        <h1 className={!Active ? "NumerArr" : "NumerArrinActiv"}>
+          {arr.length} Projects
+        </h1>
       </section>
 
       <section className=" flex right-section">
@@ -81,12 +90,7 @@ const Main = () => {
                 key={item.img}
                 className="  card"
               >
-              
-                     <a href={item.link} target="blank">
-                                      <img width={266} src={item.img} alt="" />
-                      
-                      </a>
-
+                <img width={266} src={item.img} alt="" />
 
                 <div style={{ width: "266px" }} className="box">
                   <h1 className="title">{item.title}</h1>
@@ -94,12 +98,14 @@ const Main = () => {
 
                   <div className="flex icons">
                     <div style={{ gap: "11px" }} className="flex">
-                      <a href={item.link} target="blank"> 
-                      
+                      <a href={item.link} target="blank">
                         <div className="icon-link"></div>
                       </a>
-                     
-                     <a href="https://github.com/MOHAMMED2207" target="blank"> <div className="icon-github"></div></a>
+
+                      <a href="https://github.com/MOHAMMED2207" target="blank">
+                        {" "}
+                        <div className="icon-github"></div>
+                      </a>
                     </div>
                     <a className="link flex" href="">
                       more
