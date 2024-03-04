@@ -126,6 +126,34 @@ main section.right-section.flex {
   margin-right: 12px;
 }
 
+.NumerArr {
+  color: #ffffff;
+  font-weight: bold;
+  background-color: rgba(36, 37, 46, 1);
+  padding: 0.75rem 0;
+  text-align: center;
+  width: 11rem;
+  border-radius: 5px;
+  transition: 0.3s;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+  opacity: 0.5;
+  font-size: 1.4rem;
+}
+.NumerArrinActiv {
+  color: #ffffff;
+  font-weight: bold;
+  background-color: rgb(255 140 0);
+  padding: 0.25rem 0;
+  text-align: center;
+  width: 11rem;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+  transition: 0.3s;
+  text-transform: capitalize;
+  opacity: 1;
+  font-size: 1.4rem;
+}
 /* =====================================
   3- Responsive Design (media query)
 ======================================== */
@@ -145,8 +173,37 @@ main section.right-section.flex {
   }
 
   main section.left-section.flex button {
-    width: 7rem;
+    width: 9rem;
     padding: 0.8rem 0;
+    font-size: 0.9rem;
+  }
+
+  .NumerArr {
+    color: #ffffff;
+    font-weight: bold;
+    background-color: rgba(36, 37, 46, 1);
+    padding: 0.75rem 0;
+    text-align: center;
+    width: 9rem;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-transform: capitalize;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.5;
+    font-size: 0.9rem;
+  }
+  .NumerArrinActiv {
+    color: #ffffff;
+    font-weight: bold;
+    background-color: rgb(255 140 0);
+    padding: 0.75rem 0;
+    text-align: center;
+    width: 9rem;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-transform: capitalize;
+    opacity: 1;
     font-size: 0.9rem;
   }
 }
