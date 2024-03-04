@@ -82,41 +82,46 @@ const Main = () => {
         <AnimatePresence>
           {arr.map((item) => {
             return (
-              <motion.article
-                layout
-                initial={{ transform: "scale(0.4)" }}
-                animate={{ transform: "scale(1)" }}
-                transition={{ type: "spring", damping: 8, stiffness: 50 }}
-                key={item.img}
-                className="  card"
-              >
-                <img width={266} src={item.img} alt="" />
+              <a href={item.link} target="blank">
+                <motion.article
+                  layout
+                  initial={{ transform: "scale(0.4)" }}
+                  animate={{ transform: "scale(1)" }}
+                  transition={{ type: "spring", damping: 8, stiffness: 50 }}
+                  key={item.img}
+                  className="  card"
+                >
+                  <img width={266} src={item.img} alt="" />
 
-                <div style={{ width: "266px" }} className="box">
-                  <h1 className="title">{item.title}</h1>
-                  <p className="sub-title">{item.title2}</p>
+                  <div style={{ width: "266px" }} className="box">
+                    <h1 className="title">{item.title}</h1>
+                    <p className="sub-title">{item.title2}</p>
 
-                  <div className="flex icons">
-                    <div style={{ gap: "11px" }} className="flex">
-                      <a href={item.link} target="blank">
-                        <div className="icon-link"></div>
-                      </a>
+                    <div className="flex icons">
+                      <div style={{ gap: "11px" }} className="flex">
+                        <a href={item.link} target="blank">
+                          <div className="icon-link"></div>
+                        </a>
 
-                      <a href="https://github.com/MOHAMMED2207" target="blank">
-                        {" "}
-                        <div className="icon-github"></div>
+                        <a
+                          href="https://github.com/MOHAMMED2207"
+                          target="blank"
+                        >
+                          {" "}
+                          <div className="icon-github"></div>
+                        </a>
+                      </div>
+                      <a className="link flex" href="">
+                        more
+                        <span
+                          style={{ alignSelf: "center" }}
+                          className="icon-arrow-right"
+                        ></span>
                       </a>
                     </div>
-                    <a className="link flex" href="">
-                      more
-                      <span
-                        style={{ alignSelf: "center" }}
-                        className="icon-arrow-right"
-                      ></span>
-                    </a>
                   </div>
-                </div>
-              </motion.article>
+                </motion.article>
+              </a>
             );
           })}
         </AnimatePresence>
