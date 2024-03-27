@@ -428,4 +428,18 @@ export const myProjects = [
     img: "img/img-pro/blackboard-inscribed-with-scientific-formulas-calculations22.jpg",
     link: "https://calculator-ios-app-git-main-mohammed2207.vercel.app/",
   },
+  {
+    id: 23,
+    category: ["react", "js"],
+
+    title: "Airbnb-clone",
+    title2:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elitdistinctio reiciendis ipsa a esse doloremque ",
+    para1: "#Next",
+    para2: "#Taliwind",
+    para3: "#ts",
+    para4: "#jsx",
+    img: "img/img-pro/Airbnbclone.jpg",
+    link: "https://airbnb-clone-d7cq-250nv7qj6-mohammed2207.vercel.app/",
+  },
 ];
