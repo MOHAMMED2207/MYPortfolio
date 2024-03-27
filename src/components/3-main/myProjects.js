@@ -439,7 +439,7 @@ export const myProjects = [
     para2: "#Taliwind",
     para3: "#ts",
     para4: "#jsx",
-    img: "img/img-pro/Airbnbclone.jpg",
+    img: "img/Airbnbclone.jpg",
     link: "https://airbnb-clone-d7cq-250nv7qj6-mohammed2207.vercel.app/",
   },
 ];
