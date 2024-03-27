@@ -430,7 +430,7 @@ export const myProjects = [
   },
   {
     id: 23,
-    category: ["react", "js"],
+    category: ["react", "js" , "node"],
 
     title: "Airbnb-clone",
     title2:
