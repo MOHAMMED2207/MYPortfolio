@@ -4,7 +4,21 @@ import devAnimation from "../../animation/dev.json";
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 const Hero = () => {
-  
+    const lottieRef = useRef();
+  const [visitCount, setVisitCount] = useState(
+    parseInt(localStorage.getItem("visitCount")) || 0
+  );
+
+  useEffect(() => {
+    // Increment visit count logic (e.g., fetch from API, local storage, etc.)
+    // For demonstration purposes, just increment by 1 when the component mounts.
+    setVisitCount((prevCount) => {
+      const newCount = prevCount + 1;
+      localStorage.setItem("visitCount", newCount.toString());
+      return newCount;
+    });
+  }, []);
+  // Empty dependency array ensures the effect runs only once on mount
   return (
     <section className="hero flex">
       <div className="left-section  ">
