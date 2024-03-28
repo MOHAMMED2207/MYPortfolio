@@ -440,6 +440,6 @@ export const myProjects = [
     para3: "#ts",
     para4: "#jsx",
     img: "img/img-pro/Airbnbclone.png",
-    link: "https://airbnb-clone-d7cq-250nv7qj6-mohammed2207.vercel.app/",
+    link: "https://airbnb-clone-cmng8hpf2-mohammed2207.vercel.app/",
   },
 ];
