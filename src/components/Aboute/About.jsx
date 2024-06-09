@@ -20,7 +20,7 @@ const About = () => {
                       data-nimg={1}
                       className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
                       sizes="(min-width: 1024px) 32rem, 20rem"
-            src="/img/Myphoto.png"
+            src="/img/Myphoto.JPG"
                       style={{ color: "transparent" }}
                     />
                   </div>
