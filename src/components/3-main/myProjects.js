@@ -1,6 +1,6 @@
 export const myProjects = [
   {
-    id: 20,
+    id: 200,
     category: ["react", "js" , "node"],
     title: "X Twitter App",
     title2:
