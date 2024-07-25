@@ -2,7 +2,6 @@ export const myProjects = [
   {
     id: 20,
     category: ["react", "js" , "node"],
-
     title: "X Twitter App",
     title2:
       "Lorem ipsum dolor sit amet consectetur adipisicing elitDolores ducimus aut Cum tempore ex distinctio rei",
