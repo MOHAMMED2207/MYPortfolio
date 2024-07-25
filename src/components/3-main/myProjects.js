@@ -1,5 +1,19 @@
 export const myProjects = [
   {
+    id: 00,
+    category: ["react", "js" , "node"],
+
+    title: "X Twitter App",
+    title2:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elitDolores ducimus aut Cum tempore ex distinctio rei",
+    para1: "#html",
+    para2: "#css",
+    para3: "#js",
+    para4: "#bootstrap",
+    img: "/img/img-pro/twitter.png",
+    link: "https://twitter-ui-lemon.vercel.app",
+  },
+  {
     id: 0,
     category: ["css"],
 
