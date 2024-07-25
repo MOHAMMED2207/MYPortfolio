@@ -10,7 +10,7 @@ export const myProjects = [
     para2: "#css",
     para3: "#js",
     para4: "#bootstrap",
-    img: "/img/img-pro/twitter.png",
+    img: "/img/img-pro/IMG_6061.png",
     link: "https://twitter-ui-lemon.vercel.app",
   },
   {
