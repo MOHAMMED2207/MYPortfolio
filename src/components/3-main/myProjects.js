@@ -12,6 +12,19 @@ export const myProjects = [
     img: "/img/img-pro/Screenshot 2024-08-03 174738.png",
     link: "https://twitter-ui-lemon.vercel.app",
   },
+    {
+    id: 200,
+    category: ["react", "js" , "node"],
+    title: "Movies App cloun",
+    title2:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elitDolores ducimus aut Cum tempore ex distinctio rei",
+    para1: "#html",
+    para2: "#css",
+    para3: "#js",
+    para4: "#bootstrap",
+    img: "/img/img-pro/Screenshot 2025-06-26 181740.png",
+    link: "https://movies-clon.vercel.app",
+  },
   {
     id: 0,
     category: ["css"],
