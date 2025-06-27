@@ -1,10 +1,9 @@
 export const myProjects = [
   {
     id: 200,
-    category: ["react", "js" , "node"],
+    category: ["react", "js", "node"],
     title: "X Twitter App",
-    title2:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elitDolores ducimus aut Cum tempore ex distinctio rei",
+    title2: "A Twitter UI clone allowing users to post tweets and interact with posts, built using React and Node.",
     para1: "#html",
     para2: "#css",
     para3: "#js",
@@ -12,12 +11,11 @@ export const myProjects = [
     img: "/img/img-pro/Screenshot 2024-08-03 174738.png",
     link: "https://twitter-ui-lemon.vercel.app",
   },
-    {
+  {
     id: 200,
-    category: ["react", "js" , "node"],
-    title: "Movies App cloun",
-    title2:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elitDolores ducimus aut Cum tempore ex distinctio rei",
+    category: ["react", "js", "node"],
+    title: "Movies App Clone",
+    title2: "A movie browsing app displaying trending movies with details and ratings, built with React and API integration.",
     para1: "#html",
     para2: "#css",
     para3: "#js",
@@ -28,10 +26,8 @@ export const myProjects = [
   {
     id: 0,
     category: ["css"],
-
-    title: "E-commerse-shop",
-    title2:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elitDolores ducimus aut Cum tempore ex distinctio rei",
+    title: "E-commerce Shop",
+    title2: "A responsive e-commerce frontend to display products with a clean and simple design using HTML, CSS, and JS.",
     para1: "#html",
     para2: "#css",
     para3: "#js",
@@ -39,14 +35,11 @@ export const myProjects = [
     img: "/img/img-pro/Screenshot 2023-05-07 105731.png",
     link: "https://shop-ecommers.vercel.app/",
   },
-
   {
     id: 1,
     category: ["react", "js"],
-
-    title: "AMAZONE",
-    title2:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elitdistinctio reiciendis ipsa a esse doloremque ",
+    title: "Amazon Clone",
+    title2: "An Amazon-like e-commerce frontend with product listings and a cart system, built using React and Firebase.",
     para1: "#REACT",
     para2: "#css",
     para3: "#js",
@@ -54,14 +47,11 @@ export const myProjects = [
     img: "img/img-pro/Screenshot 2023-03-27 155815.png",
     link: "https://clone-dffaf.web.app/",
   },
-  
   {
     id: 2,
     category: ["js"],
-
-    title: "CRUD_operations_Sys",
-    title2:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elitdistinctio reiciendis ipsa a esse doloremque ",
+    title: "CRUD Operations System",
+    title2: "A CRUD system allowing users to add, edit, and delete data using JavaScript with LocalStorage for data persistence.",
     para1: "#REACT",
     para2: "#css",
     para3: "#js",
@@ -69,14 +59,11 @@ export const myProjects = [
     img: "img/img-pro/Screenshot 2023-08-05 012749.png",
     link: "https://crud-opration-sys.vercel.app/",
   },
-
   {
     id: 3,
     category: ["js"],
-
-    title: "MOvis_black",
-    title2:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elitDolores ducimus aut C ipsa a esse doloremque ",
+    title: "Movies Black",
+    title2: "A movie app with a clean dark theme that displays trending movies and their details using JS and API.",
     para1: "#html",
     para2: "#css",
     para3: "#js",
@@ -84,14 +71,11 @@ export const myProjects = [
     img: "img/img-pro/Screenshot 2023-05-25 222930.png",
     link: "https://movis-api-two.vercel.app/",
   },
-
   {
     id: 5,
     category: ["react", "js"],
-
-    title: "Full_Movis",
-    title2:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elitDolores ducimus aut C ipsa a esse doloremque ",
+    title: "Full Movies",
+    title2: "A movie browsing app with detailed pages for each movie, ratings, and API data integration, built with React.",
     para1: "#html",
     para2: "#css",
     para3: "#js",
@@ -102,53 +86,35 @@ export const myProjects = [
   {
     id: 6,
     category: ["react", "js"],
-
-    title: "Movis_Watched",
-    title2:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elitDolores ducimus aut C ipsa a esse doloremque ",
+    title: "Movies Watched",
+    title2: "An app for tracking and listing the movies you've watched, with notes and status management using React.",
     para1: "#React.js",
-    // para2: "#css",
-    // para3: "#js",
-    // para4: "#bootstrap",
     img: "img/img-pro/Screenshot 2023-11-14 205338.png",
     link: "https://movies-list-beige.vercel.app/",
   },
   {
     id: 6,
     category: ["js"],
-
-    title: "TodoLisrt",
-    title2:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elitDolores ducimus aut C ipsa a esse doloremque ",
+    title: "Todo List",
+    title2: "A simple to-do list app allowing users to add and remove daily tasks, built with JavaScript for practice.",
     para1: "#React.js",
-    // para2: "#css",
-    // para3: "#js",
-    // para4: "#bootstrap",
     img: "img/img-pro/todolist.png",
     link: "https://todo-list-js-murex.vercel.app/",
   },
   {
     id: 7,
     category: ["react", "js"],
-
-    title: "AMAZONE_Full_Ecommerse",
-    title2:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elitDolores ducimus aut C ipsa a esse doloremque ",
+    title: "Amazon Full E-commerce",
+    title2: "A complete Amazon e-commerce clone with advanced cart functionalities and user-friendly design, built using React.",
     para1: "#React.js",
-    // para2: "#css",
-    // para3: "#js",
-    // para4: "#bootstrap",
     img: "img/img-pro/Screenshot 2023-11-15 163404.png",
     link: "https://clone-dffaf.web.app/",
   },
-
   {
     id: 1,
     category: ["css"],
-
-    title: "Topico_shop",
-    title2:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elitDolores ducimus aut Cum tempore ex distinctio rei",
+    title: "Topico Shop",
+    title2: "A responsive mobile store frontend showcasing smartphone products using clean UI built with HTML, CSS, and JS.",
     para1: "#html",
     para2: "#css",
     para3: "#js",
@@ -159,10 +125,8 @@ export const myProjects = [
   {
     id: 2,
     category: ["css"],
-
-    title: "Food-Website",
-    title2:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elitDolores ducimus aut Cum tempore ex distincti",
+    title: "Food Website",
+    title2: "A clean restaurant website displaying food menus with a visually appealing layout using HTML, CSS, and JS.",
     para1: "#html",
     para2: "#css",
     para3: "#js",
@@ -170,14 +134,11 @@ export const myProjects = [
     img: "img/img-pro/Screenshot 2023-03-12 231008.png",
     link: "https://food-website-livid.vercel.app/",
   },
-
   {
     id: 3,
     category: ["js", "css"],
-
-    title: "Beats-Website",
-    title2:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elitDolores ducimus aut Cum tempore ex distinctio rei",
+    title: "Beats Website",
+    title2: "A product showcase site for Beats headphones with a sleek and modern design using HTML, CSS, and JavaScript.",
     para1: "#html",
     para2: "#css",
     para3: "#js",
@@ -188,10 +149,8 @@ export const myProjects = [
   {
     id: 3,
     category: ["css"],
-
-    title: "Woodex_shop",
-    title2:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elitDolores ducimus aut Cum tempore ex distinctio rei",
+    title: "Woodex Shop",
+    title2: "An online furniture shop frontend with a clean, modern design, showcasing products using HTML, CSS, and JS.",
     para1: "#html",
     para2: "#css",
     para3: "#js",
@@ -202,10 +161,8 @@ export const myProjects = [
   {
     id: 4,
     category: ["css"],
-
-    title: "Kitter_shop",
-    title2:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elitDolores ducimus aut Cum tempore ex distinctio rei",
+    title: "Kitter Shop",
+    title2: "A responsive pet shop website showcasing pet products and accessories using HTML, CSS, and JavaScript.",
     para1: "#html",
     para2: "#css",
     para3: "#js",
@@ -216,10 +173,8 @@ export const myProjects = [
   {
     id: 5,
     category: ["css"],
-
-    title: "Halloween",
-    title2:
-      "Lorem ipsum dolor sit amet consectetur adipisicing eex distinctio reiciendis ipsa a esse doloremque quot",
+    title: "Halloween Website",
+    title2: "A festive Halloween-themed website with animations and themed colors using HTML, CSS, and JavaScript.",
     para1: "#html",
     para2: "#css",
     para3: "#js",
@@ -230,10 +185,8 @@ export const myProjects = [
   {
     id: 6,
     category: ["css"],
-
-    title: "filmlance-best-movie",
-    title2:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elitDolores ducimus aut Cum tempore ex distinctio rei",
+    title: "Filmlane Best Movies",
+    title2: "A movie collection website showcasing trending movies with categories, built with HTML, CSS, and JavaScript.",
     para1: "#html",
     para2: "#css",
     para3: "#js",
@@ -241,14 +194,11 @@ export const myProjects = [
     img: "img/img-pro/Screenshot 2023-03-12 230823.png",
     link: "https://filmlane-best-movie-collections-main.vercel.app/",
   },
-
   {
     id: 7,
     category: ["css"],
-
-    title: "Book-Doctors-Website",
-    title2:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elitDolores ducimus aut Cum tempore ex distinctio rei",
+    title: "Book Doctors Website",
+    title2: "A medical appointment booking website with a clean, professional layout using HTML, CSS, and JavaScript.",
     para1: "#html",
     para2: "#css",
     para3: "#js",
@@ -259,10 +209,8 @@ export const myProjects = [
   {
     id: 8,
     category: ["css"],
-
-    title: "Cars-Website",
-    title2:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elitDolores ducimus aut Cum tempore ex distinctio rei",
+    title: "Cars Website",
+    title2: "A car dealership frontend displaying car models with a modern layout using HTML, CSS, and JavaScript.",
     para1: "#html",
     para2: "#css",
     para3: "#js",
@@ -273,10 +221,8 @@ export const myProjects = [
   {
     id: 9,
     category: ["css"],
-
-    title: "Mc-Foodi-Website",
-    title2:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elitDolores ducimus aut Cum tempore ex distinctio rei",
+    title: "Mc-Foodi Website",
+    title2: "A fast-food restaurant landing page displaying menu items with a clean, colorful UI using HTML, CSS, and JS.",
     para1: "#html",
     para2: "#css",
     para3: "#js",
@@ -287,10 +233,8 @@ export const myProjects = [
   {
     id: 10,
     category: ["css"],
-
-    title: "plants-website-khaki",
-    title2:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elitDolores ducimus aut Cum tempore ex distinctio rei",
+    title: "Plants Website",
+    title2: "A nature-themed plants e-commerce frontend showcasing plants for sale using HTML, CSS, and JavaScript.",
     para1: "#html",
     para2: "#css",
     para3: "#js",
@@ -301,10 +245,8 @@ export const myProjects = [
   {
     id: 11,
     category: ["css"],
-
-    title: "netflixx-six",
-    title2:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elitDolores ducimus aut Cum tempore ex distinctio rei",
+    title: "Netflix Clone",
+    title2: "A Netflix landing page clone showcasing movie posters and categories using HTML, CSS, and JavaScript.",
     para1: "#html",
     para2: "#css",
     para3: "#js",
@@ -315,10 +257,8 @@ export const myProjects = [
   {
     id: 12,
     category: ["css"],
-
-    title: "appie-clone",
-    title2:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elitDolores ducimus aut Cum tempore ex distinctio rei",
+    title: "Appie Clone",
+    title2: "A landing page clone of Appie showcasing product features with a clean design using HTML, CSS, and JS.",
     para1: "#html",
     para2: "#css",
     para3: "#js",
@@ -329,10 +269,8 @@ export const myProjects = [
   {
     id: 13,
     category: ["css"],
-
-    title: "facebook",
-    title2:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elitDolores ducimus aut Cum tempore ex distincti ",
+    title: "Facebook Clone",
+    title2: "A Facebook login and feed interface clone with a clean, responsive design using HTML, CSS, and JavaScript.",
     para1: "#html",
     para2: "#css",
     para3: "#js",
@@ -343,10 +281,8 @@ export const myProjects = [
   {
     id: 14,
     category: ["react"],
-
-    title: "otere-portfolio-react",
-    title2:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elitDolores ducreiciendis ipsa a esse doloremque quot",
+    title: "Otere Portfolio React",
+    title2: "A personal portfolio website showcasing projects and skills, built using React for dynamic rendering.",
     para1: "#REACT",
     para2: "#css",
     para3: "#js",
@@ -357,10 +293,8 @@ export const myProjects = [
   {
     id: 16,
     category: ["css"],
-
-    title: "alfy-website",
-    title2:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elitDolores ducimus aut Cum tempore ex distinctio rei",
+    title: "Alfy Website",
+    title2: "A small business landing page showcasing services and contact details using HTML, CSS, and JavaScript.",
     para1: "#html",
     para2: "#css",
     para3: "#js",
@@ -368,14 +302,11 @@ export const myProjects = [
     img: "img/img-pro/Screenshot 2023-03-31 174218.png",
     link: "https://alfy-website.vercel.app/",
   },
-
   {
     id: 18,
     category: ["css"],
-
-    title: "Crafti_Shop",
-    title2:
-      "Lorem ipsum dolor sit amet consectetur aCum tempore ex distinctio reiciendis ipsa a esse doloremque quot",
+    title: "Crafti Shop",
+    title2: "A crafts and handmade products online shop with a clean, attractive layout using HTML, CSS, and JavaScript.",
     para1: "#html",
     para2: "#css",
     para3: "#js",
@@ -383,14 +314,11 @@ export const myProjects = [
     img: "img/img-pro/Screenshot 2023-08-04 213045.png",
     link: "https://crafti-shop.vercel.app/",
   },
-
   {
     id: 19,
     category: ["css"],
-
-    title: "5amsat-clone",
-    title2:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elitDolores ducimus aut Cum tempore ex distinctio rei",
+    title: "5amsat Clone",
+    title2: "A simple freelance micro-services marketplace landing page clone using HTML, CSS, and JavaScript.",
     para1: "#html",
     para2: "#css",
     para3: "#js",
@@ -401,10 +329,8 @@ export const myProjects = [
   {
     id: 20,
     category: ["css"],
-
-    title: "Glowing-shop",
-    title2:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elitDolores ducimus aut Cum tempore ex distinctio rei",
+    title: "Glowing Shop",
+    title2: "A beauty and glowing products online shop frontend using HTML, CSS, and JavaScript with a clean design.",
     para1: "#REACT",
     para2: "#css",
     para3: "#js",
@@ -414,11 +340,9 @@ export const myProjects = [
   },
   {
     id: 20,
-    category: ["react","js"],
-
-    title: "Linkeed In",
-    title2:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elitDolores ducimus aut Cum tempore ex distinctio rei",
+    category: ["react", "js"],
+    title: "LinkedIn Clone",
+    title2: "A LinkedIn UI clone showcasing posts and profile sections, built using React for practice and learning.",
     para1: "#REACT",
     para2: "#css",
     para3: "#js",
@@ -427,12 +351,10 @@ export const myProjects = [
     link: "https://linked-in-uj5p.vercel.app/",
   },
   {
-   id: 21,
+    id: 21,
     category: ["react", "js"],
-
     title: "Tic Tac Toe Game",
-    title2:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elitdistinctio reiciendis ipsa a esse doloremque ",
+    title2: "A classic Tic Tac Toe game with a clean UI and interactive gameplay, built using React for learning purposes.",
     para1: "#REACT",
     para2: "#css",
     para3: "#js",
@@ -443,10 +365,8 @@ export const myProjects = [
   {
     id: 22,
     category: ["react", "js"],
-
-    title: "Calculator App ios",
-    title2:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elitdistinctio reiciendis ipsa a esse doloremque ",
+    title: "Calculator App iOS",
+    title2: "An iOS-style calculator app with interactive buttons and smooth calculations, built using React.",
     para1: "#REACT",
     para2: "#css",
     para3: "#js",
@@ -456,13 +376,11 @@ export const myProjects = [
   },
   {
     id: 23,
-    category: ["react", "js" , "node"],
-
-    title: "Airbnb-clone",
-    title2:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elitdistinctio reiciendis ipsa a esse doloremque ",
+    category: ["react", "js", "node"],
+    title: "Airbnb Clone",
+    title2: "An Airbnb UI clone displaying property listings with filtering and details, built using Next.js and Tailwind.",
     para1: "#Next",
-    para2: "#Taliwind",
+    para2: "#Tailwind",
     para3: "#ts",
     para4: "#jsx",
     img: "img/img-pro/Airbnbclone.png",
