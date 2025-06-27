@@ -4,158 +4,138 @@ import { myProjects } from "./myProjects";
 import { AnimatePresence, motion } from "framer-motion";
 import InfiniteScroll from "react-infinite-scroll-component";
 import { Link } from "react-router-dom";
-import LazyLoad from "react-lazyload";
+import SkeletonCard from "../../Skeltoen/SkeletonCard";
+
+const PROJECTS_PER_LOAD = 8;
 
 const Main = () => {
-  const [Active, setActive] = useState(false);
-  const [currentActive, setCurrentActive] = useState("all");
-  const [arr, setArr] = useState(myProjects.slice(0, 8)); // عرض 8 مشاريع عند البداية
+  const [activeCategory, setActiveCategory] = useState("all");
+  const [filteredProjects, setFilteredProjects] = useState(
+    myProjects.slice(0, PROJECTS_PER_LOAD)
+  );
   const [hasMore, setHasMore] = useState(true);
+  const [loading, setLoading] = useState(false);
 
-  const handleClick = useCallback(async (buttonCategory) => {
-    setCurrentActive(buttonCategory);
+  const filterProjects = (category) => {
+    if (category === "all") return myProjects;
+    return myProjects.filter((item) => item.category.includes(category));
+  };
 
-    // محاكاة تأخير تحميل البيانات
-    await new Promise((resolve) => setTimeout(resolve, 500)); // تأخير 500 مللي ثانية
-
-    const newArr = myProjects.filter((item) =>
-      item.category.includes(buttonCategory)
-    );
-
-    setArr(newArr.slice(0, 8)); // عرض 8 مشاريع عند البداية
-    setHasMore(newArr.length > 8); // التحقق من وجود المزيد من المشاريع للتحميل
-  }, []);
+  const handleCategoryClick = async (category) => {
+    setActiveCategory(category);
+    setLoading(true);
+    const filtered = filterProjects(category);
+    await new Promise((res) => setTimeout(res, 200));
+    setFilteredProjects(filtered.slice(0, PROJECTS_PER_LOAD));
+    setHasMore(filtered.length > PROJECTS_PER_LOAD);
+    setLoading(false);
+  };
 
   const fetchMoreData = useCallback(async () => {
-    if (arr.length >= myProjects.length) {
-      setHasMore(false); // لا توجد مشاريع إضافية للتحميل
-      return;
-    }
+    const all = filterProjects(activeCategory);
+    await new Promise((res) => setTimeout(res, 200));
 
-    // محاكاة تأخير تحميل البيانات
-    await new Promise((resolve) => setTimeout(resolve, 500)); // تأخير 500 مللي ثانية
-
-    // تحميل 8 مشاريع إضافية
-    setArr((prevArr) => [
-      ...prevArr,
-      ...myProjects.slice(prevArr.length, prevArr.length + 8),
-    ]);
-  }, [arr]);
+    const next = all.slice(
+      filteredProjects.length,
+      filteredProjects.length + PROJECTS_PER_LOAD
+    );
+    setFilteredProjects((prev) => [...prev, ...next]);
+    if (filteredProjects.length + next.length >= all.length) setHasMore(false);
+  }, [filteredProjects, activeCategory]);
 
   return (
     <main className="flex">
       <section className="flex left-section" id="Projects">
-        <button
-          onClick={() => {
-            setActive(false);
-            setCurrentActive("all");
-            setArr(myProjects.slice(0, 6)); // عرض 6 مشاريع عند البداية
-            setHasMore(myProjects.length > 6);
-          }}
-          className={currentActive === "all" ? "active" : null}
-        >
-          all projects
-        </button>
-
-        <button
-          onClick={() => {
-            setActive(true);
-            handleClick("css");
-          }}
-          className={currentActive === "css" ? "active" : null}
-        >
-          HTML & CSS
-        </button>
-
-        <button
-          onClick={() => {
-            setActive(true);
-            handleClick("js");
-          }}
-          className={currentActive === "js" ? "active" : null}
-        >
-          JavaScript
-        </button>
-        <button
-          onClick={() => {
-            setActive(true);
-            handleClick("react");
-          }}
-          className={currentActive === "react" ? "active" : null}
-        >
-          React & MUI
-        </button>
-        <button
-          onClick={() => {
-            setActive(true);
-            handleClick("node");
-          }}
-          className={currentActive === "node" ? "active" : null}
-        >
-          Node & Express
-        </button>
-        <h1 className={!Active ? "NumerArr" : "NumerArrinActiv"}>
-          {arr.length} Projects
-        </h1>
+        {["all", "css", "js", "react", "node"].map((cat) => (
+          <button
+            key={cat}
+            className={activeCategory === cat ? "active" : ""}
+            onClick={() => handleCategoryClick(cat)}
+          >
+            {cat === "all"
+              ? "All Projects"
+              : cat === "css"
+              ? "HTML & CSS"
+              : cat === "js"
+              ? "JavaScript"
+              : cat === "react"
+              ? "React & MUI"
+              : "Node & Express"}
+          </button>
+        ))}
       </section>
+
       <section className="Allsection">
         <InfiniteScroll
           className="flex right-section"
-          dataLength={arr.length} // عدد المشاريع المعروضة
-          next={fetchMoreData} // دالة لجلب المزيد من المشاريع
-          hasMore={hasMore} // التحقق من وجود المزيد من المشاريع
-          loader={<h4>Loading...</h4>} // رسالة تحميل أثناء جلب المزيد
+          dataLength={filteredProjects.length}
+          next={fetchMoreData}
+          hasMore={hasMore}
+          loader={
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "42px" }}>
+              {[...Array(4)].map((_, i) => (
+                <SkeletonCard key={i} />
+              ))}
+            </div>
+          }
         >
           <AnimatePresence>
-            {arr.map((item, inx) => (
-              <Link to={item.link} target="_blank">
-                <div key={inx}>
-                  <motion.article
-                    layout
-                    initial={{ scale: 0.4 }}
-                    animate={{ scale: 1 }}
-                    transition={{ type: "spring", damping: 8, stiffness: 50 }}
-                    className="card"
-                  >
-                    <LazyLoad height={300} offset={100}>
-                      <img className="imgCard" src={item.img} alt="" />
-                    </LazyLoad>
+            {loading
+              ? [...Array(6)].map((_, i) => <SkeletonCard key={i} />)
+              : filteredProjects.map((item, i) => (
+                  <Link to={item.link} target="_blank" key={i}>
+                    <motion.article
+                      layout
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ duration: 0.4 }}
+                      className="card"
+                    >
+                      <div className="imgCard-wrapper">
+                        <img
+                          className="imgCard"
+                          src={item.img}
+                          alt={item.title}
+                          loading="lazy"
+                          width="100%"
+                          height="160px"
+                          style={{ objectFit: "cover", borderRadius: "12px" }}
+                        />
+                      </div>
+                      <div style={{ width: "266px" }} className="box">
+                        <h1 className="title">{item.title}</h1>
+                        <p className="sub-title">{item.title2}</p>
 
-                    <div style={{ width: "266px" }} className="box">
-                      <h1 className="title">{item.title}</h1>
-                      <p className="sub-title">{item.title2}</p>
+                        <div className="flex icons">
+                          <div style={{ gap: "11px" }} className="flex">
+                            <Link
+                              to={item.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <div className="icon-link"></div>
+                            </Link>
 
-                      <div className="flex icons">
-                        <div style={{ gap: "11px" }} className="flex">
-                          <Link
-                            to={item.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <div className="icon-link"></div>
-                          </Link>
-
-                          <Link
-                            to="https://github.com/MOHAMMED2207"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <div className="icon-github"></div>
+                            <Link
+                              to="https://github.com/MOHAMMED2207"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <div className="icon-github"></div>
+                            </Link>
+                          </div>
+                          <Link className="link flex" to="">
+                            more
+                            <span
+                              style={{ alignSelf: "center" }}
+                              className="icon-arrow-right"
+                            ></span>
                           </Link>
                         </div>
-                        <Link className="link flex" to="">
-                          more
-                          <span
-                            style={{ alignSelf: "center" }}
-                            className="icon-arrow-right"
-                          ></span>
-                        </Link>
                       </div>
-                    </div>
-                  </motion.article>
-                </div>
-              </Link>
-            ))}
+                    </motion.article>
+                  </Link>
+                ))}
           </AnimatePresence>
         </InfiniteScroll>
       </section>
