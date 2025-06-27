@@ -72,7 +72,7 @@ const Main = () => {
           next={fetchMoreData}
           hasMore={hasMore}
           loader={
-            <div style={{ display: "flex", flexWrap: "wrap", gap: "42px" }}>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "28px" }}>
               {[...Array(4)].map((_, i) => (
                 <SkeletonCard key={i} />
               ))}
