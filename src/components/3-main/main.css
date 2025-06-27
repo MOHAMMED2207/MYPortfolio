@@ -24,7 +24,7 @@ main section.left-section.flex {
 
 main section.left-section.flex button {
   background-color: rgba(36, 37, 46, 1);
-  width: 11rem;
+  width: 12rem;
   padding: 0.75rem 0;
   text-align: center;
   font-size: 1.05rem;
@@ -220,10 +220,13 @@ main {
 }
 
 .right-section {
-  display: flex;
+  padding: 0px 0px;
   flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  gap: 40px 0px;
+  justify-content: space-around;
 }
 
 .card {
@@ -249,7 +252,7 @@ main {
 }
 
 .Allsection {
-  max-height: 46rem;
+  height: 35rem;
   width: 100%;
   overflow-y: scroll;
 }
