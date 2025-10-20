@@ -33,6 +33,7 @@ const Hero = () => {
           Bring Vision Into Reality.
         </p>
 
+        <div className="flex flex-col gap-2">
         <div className="all-icons flex">
           <div className="icon icon-twitter"></div>
           <Link to="https://www.instagram.com/moo_mohammed_64/" target="_blank">
@@ -72,6 +73,7 @@ const Hero = () => {
       <i className="devicon-vscode-plain colored"></i>
       <i className="devicon-tailwindcss-plain colored"></i>
       <i className="devicon-nextjs-original colored"></i>
+    </div>
     </div>
 
 
