@@ -1,94 +1,62 @@
 import Lottie from "lottie-react";
 import "./hero.css";
 import devAnimation from "../../animation/dev.json";
+import { Link } from "react-router-dom";
 import LazyLoad from "react-lazyload";
 
 const Hero = () => {
   return (
     <section className="hero flex">
-      {/* 🔹 الجزء الأيسر */}
       <div className="left-section">
-        {/* الصورة الشخصية */}
         <div className="parent-avatar flex">
           <LazyLoad height={200} once={true} offset={100}>
             <img
               src="/img/Myphoto.png"
               className="avatar"
               alt="MyPhoto"
-              loading="lazy"
+              loading="lazy" // تحسين تحميل الصور
             />
           </LazyLoad>
-          <div className="icon-verified" title="Verified"></div>
+          <div className="icon-verified"></div>
         </div>
 
-        {/* العنوان */}
         <h1 className="title">
           Software designer, founder, and amateur astronaut.
         </h1>
 
-        {/* الوصف */}
         <p className="sub-title">
-          I'm a skilled Front-End Web Developer with experience in JavaScript and
-          TypeScript, and expertise in the ReactJS framework. I have built many
-          responsive web applications and user interfaces. I'm a quick learner and
-          cooperative person, passionate about learning new tools and technologies.
-          My goal is to be a better developer. Let's work together to bring vision
-          into reality.
+          I'm Skilled Front-End Web Developer With Experience In JavaScript And
+          TypeScript, And Expertise In ReactJS Framework Also Build Many
+          Responsive Web Applications And User Interfaces. I'm A Quick Learner
+          And Cooperative Person. I'm Passionate About Learning New Tools And
+          Technologies. My Goal To Be A Better Developer. Let's Work Together
+          Bring Vision Into Reality.
         </p>
 
-        {/* 🔹 الأيقونات الاجتماعية */}
         <div className="all-icons flex">
-          <a
-            href="https://twitter.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="icon icon-twitter"
-            aria-label="Twitter"
-          ></a>
+          <div className="icon icon-twitter"></div>
+          <Link to="https://www.instagram.com/moo_mohammed_64/" target="_blank">
+            <div className="icon icon-instagram"></div>
+          </Link>
 
-          <a
-            href="https://www.instagram.com/moo_mohammed_64/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="icon icon-instagram"
-            aria-label="Instagram"
-          ></a>
+          <Link to="https://github.com/MOHAMMED2207" target="_blank">
+            <div className="icon icon-github"></div>
+          </Link>
 
-          <a
-            href="https://github.com/MOHAMMED2207"
+          <Link
+            to="https://www.linkedin.com/in/mohammed-abd-alfatah-58959a256/"
             target="_blank"
-            rel="noopener noreferrer"
-            className="icon icon-github"
-            aria-label="GitHub"
-          ></a>
-
-          <a
-            href="https://www.linkedin.com/in/mohammed-abd-alfatah-58959a256/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="icon icon-linkedin"
-            aria-label="LinkedIn"
-          ></a>
-        </div>
-
-        {/* ===== New Section for Programming Languages ===== */}
-        <div className="skills-icons flex">
-          <img src="/icons/html.svg" alt="HTML" title="HTML" />
-          <img src="/icons/css.svg" alt="CSS" title="CSS" />
-          <img src="/icons/js.svg" alt="JavaScript" title="JavaScript" />
-          <img src="/icons/react.svg" alt="React" title="React" />
-          <img src="/icons/nodejs.svg" alt="Node.js" title="Node.js" />
-          <img src="/icons/mongodb.svg" alt="MongoDB" title="MongoDB" />
-          <img src="/icons/git.svg" alt="Git" title="Git" />
+          >
+            <div className="icon icon-linkedin"></div>
+          </Link>
         </div>
       </div>
 
-      {/* 🔹 الجزء الأيمن */}
       <div className="right-section animation">
         <Lottie
           animationData={devAnimation}
           loop={true}
-          style={{ width: "100%", height: "auto" }}
+          style={{ width: "100%", height: "auto" }} // ضبط حجم الرسوم المتحركة
         />
       </div>
     </section>
