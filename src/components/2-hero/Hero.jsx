@@ -1,10 +1,20 @@
+import { useState, useEffect } from "react";
 import Lottie from "lottie-react";
 import "./hero.css";
 import devAnimation from "../../animation/dev.json";
 import { Link } from "react-router-dom";
 import LazyLoad from "react-lazyload";
+const { theme } = useTheme(); // من context أو Tailwind
 
 const Hero = () => {
+  const [theme, setTheme] = useState("light"); // default
+
+  // نجيب المود الحالي من localStorage أو النظام
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme");
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    setTheme(savedTheme || (prefersDark ? "dark" : "light"));
+  }, []);
   return (
     <section className="hero flex">
       <div className="left-section">
@@ -54,26 +64,27 @@ const Hero = () => {
           </Link>
         </div>
  <div className="devicon flex gap-6 text-5xl flex-wrap items-center mt-10">
+
       <i class="devicon-npm-plain colored"></i>
       <i class="devicon-react-original colored"></i>
       <i class="devicon-nextjs-plain"></i>
       <i className="devicon-javascript-plain colored"></i>
-      <i class="devicon-redux-original colored"></i>
+      <i className={`devicon-redux-original ${theme === "light" ? "colored-light" : "colored"}`}></i>
    
       <i class="devicon-nodejs-plain-wordmark colored"></i>
       <i class="devicon-mongodb-plain colored"></i>
-      <i class="devicon-express-original"></i>
+      <i className={`devicon-express-original ${theme === "light" ? "colored-light" : ""}`}></i>
 
-      <i class="devicon-mysql-original"></i>
-      <i class="devicon-microsoftsqlserver-plain colored"></i>
-      <i class="devicon-postman-plain"></i>
+      <i className={`devicon-mysql-original ${theme === "light" ? "colored-light" : ""}`}></i>
+      <i className={`devicon-microsoftsqlserver-plain ${theme === "light" ? "colored-light" : ""}`}></i>
+      <i className={`devicon-postman-plain ${theme === "light" ? "colored-light" : ""}`}></i>
    
       <i className="devicon-tailwindcss-plain colored"></i>
       <i class="devicon-sass-original colored"></i>
-      <i class="devicon-figma-plain"></i>
+      <i className={`devicon-figma-plain ${theme === "light" ? "colored-light" : ""}`}></i>
    
       <i className="devicon-git-plain colored"></i>
-      <i className="devicon-github-original"></i>
+      <i className={`devicon-github-original ${theme === "light" ? "colored-light" : ""}`}></i>
       <i className="devicon-vscode-plain colored"></i>
     </div>
     </div>
