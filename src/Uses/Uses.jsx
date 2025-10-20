@@ -32,7 +32,7 @@ const Uses = () => {
               <ul role="list" className="space-y-10">
                 <li>
                   <h3 className="text-base font-semibold text-zinc-800 dark:text-zinc-100">
-                    Huawei Laptop (Windows)
+                   - Huawei Laptop (Windows)
                   </h3>
                   <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
                     My main device for coding and testing. Fast, reliable, and stable for long development sessions.
@@ -40,7 +40,7 @@ const Uses = () => {
                 </li>
                 <li>
                   <h3 className="text-base font-semibold text-zinc-800 dark:text-zinc-100">
-                    Dell 51-inch Screen
+                 - Dell 51-inch Screen
                   </h3>
                   <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
                     Large display for multitasking, UI design, and debugging. Helps me maintain focus during long projects.
@@ -48,7 +48,7 @@ const Uses = () => {
                 </li>
                 <li>
                   <h3 className="text-base font-semibold text-zinc-800 dark:text-zinc-100">
-                    Redragon Mechanical Keyboard & MacBook Mouse
+                    - Redragon Mechanical Keyboard & MacBook Mouse
                   </h3>
                   <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
                     Responsive keyboard and precise mouse combo that enhance typing speed and workflow efficiency.
@@ -56,7 +56,7 @@ const Uses = () => {
                 </li>
                 <li>
                   <h3 className="text-base font-semibold text-zinc-800 dark:text-zinc-100">
-                    Gaming Chair
+                   - Gaming Chair
                   </h3>
                   <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
                     Designed for comfort during long coding hours — helps me stay focused and avoid fatigue.
@@ -83,7 +83,7 @@ const Uses = () => {
               <ul role="list" className="space-y-10">
                 <li>
                   <h3 className="text-base font-semibold text-zinc-800 dark:text-zinc-100">
-                    VS Code, Node.js, Next.js, MongoDB
+                   - VS Code, Node.js, Next.js, MongoDB
                   </h3>
                   <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
                     My primary stack for building full-stack web applications — clean, scalable, and modern.
@@ -91,7 +91,7 @@ const Uses = () => {
                 </li>
                 <li>
                   <h3 className="text-base font-semibold text-zinc-800 dark:text-zinc-100">
-                    Postman & API Testing
+                   - Postman & API Testing
                   </h3>
                   <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
                     Used for testing REST APIs efficiently during backend development and integration.
@@ -99,7 +99,7 @@ const Uses = () => {
                 </li>
                 <li>
                   <h3 className="text-base font-semibold text-zinc-800 dark:text-zinc-100">
-                    npm, TypeScript, Tailwind CSS, Material UI, Bootstrap
+                  - npm, TypeScript, Tailwind CSS, Material UI, Bootstrap
                   </h3>
                   <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
                     Tools and libraries I use to maintain code quality, styling consistency, and reusable UI components.
@@ -107,7 +107,7 @@ const Uses = () => {
                 </li>
                 <li>
                   <h3 className="text-base font-semibold text-zinc-800 dark:text-zinc-100">
-                    GitHub & Vercel
+                  - GitHub & Vercel
                   </h3>
                   <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
                     Version control, collaboration, and deployment. My projects are managed on GitHub and hosted via Vercel.
@@ -134,7 +134,7 @@ const Uses = () => {
               <ul role="list" className="space-y-10">
                 <li>
                   <h3 className="text-base font-semibold text-zinc-800 dark:text-zinc-100">
-                    Figma, Photoshop, Illustrator
+                   - Figma, Photoshop, Illustrator
                   </h3>
                   <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
                     I specialize in converting ready-made Figma designs into clean, responsive, and functional interfaces.
@@ -162,7 +162,7 @@ const Uses = () => {
               <ul role="list" className="space-y-10">
                 <li>
                   <h3 className="text-base font-semibold text-zinc-800 dark:text-zinc-100">
-                    ChatGPT & VS Code Tools
+                  -  ChatGPT & VS Code Tools
                   </h3>
                   <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
                     I use AI tools like ChatGPT for problem-solving, optimization, and faster debugging during development.
@@ -170,7 +170,7 @@ const Uses = () => {
                 </li>
                 <li>
                   <h3 className="text-base font-semibold text-zinc-800 dark:text-zinc-100">
-                    Knowledge of Jira & Slack
+                  - Knowledge of Jira & Slack
                   </h3>
                   <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
                     I understand how enterprise tools like Jira and Slack are used to manage workflow and team collaboration.
@@ -186,3 +186,4 @@ const Uses = () => {
 };
 
 export default Uses;
+
