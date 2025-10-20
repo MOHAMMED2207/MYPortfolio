@@ -32,9 +32,12 @@ const Hero = () => {
           Technologies. My Goal To Be A Better Developer. Let's Work Together
           Bring Vision Into Reality.
         </p>
-
+  {/* 🔹 الأيقونات الاجتماعية */}
         <div className="all-icons flex">
-          <div className="icon icon-twitter"></div>
+          <Link to="https://twitter.com/" target="_blank">
+            <div className="icon icon-twitter"></div>
+          </Link>
+
           <Link to="https://www.instagram.com/moo_mohammed_64/" target="_blank">
             <div className="icon icon-instagram"></div>
           </Link>
@@ -50,8 +53,20 @@ const Hero = () => {
             <div className="icon icon-linkedin"></div>
           </Link>
         </div>
-      </div>
 
+        {/* 🔸 أيقونات المهارات البرمجية */}
+        <div className="skills-icons flex">
+          <img src="/icons/js.svg" alt="JavaScript" title="JavaScript" />
+          <img src="/icons/ts.svg" alt="TypeScript" title="TypeScript" />
+          <img src="/icons/react.svg" alt="React.js" title="React.js" />
+          <img src="/icons/nextjs.svg" alt="Next.js" title="Next.js" />
+          <img src="/icons/nodejs.svg" alt="Node.js" title="Node.js" />
+          <img src="/icons/mongodb.svg" alt="MongoDB" title="MongoDB" />
+          <img src="/icons/tailwind.svg" alt="Tailwind CSS" title="Tailwind CSS" />
+          <img src="/icons/git.svg" alt="Git" title="Git" />
+          <img src="/icons/vscode.svg" alt="VS Code" title="VS Code" />
+        </div>
+      </div>
       <div className="right-section animation">
         <Lottie
           animationData={devAnimation}
