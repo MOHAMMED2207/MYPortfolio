@@ -168,7 +168,6 @@ li {
   list-style-type: none;
   font-family: "Outfit", Sans-serif;
   display: flex;
-  align-items: center;
 }
 
 .skills {
@@ -563,3 +562,4 @@ li {
   left: 0;
   background-color: var(--title);
 }
+
