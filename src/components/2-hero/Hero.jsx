@@ -61,10 +61,12 @@ const Hero = () => {
       <i class="devicon-react-original colored"></i>
       <i class="devicon-nextjs-plain"></i>
       <i class="devicon-redux-original colored"></i>
+   <i class="devicon-npm-plain colored"></i>
+
       <i class="devicon-nodejs-plain-wordmark colored"></i>
-      <i class="devicon-mongodb-plain-wordmark colored"></i> 
+<i class="devicon-mongodb-plain colored"></i>
       <i class="devicon-azuresqldatabase-plain"></i>
-      <i class="devicon-mysql-plain-wordmark"></i>
+<i class="devicon-mysql-original"></i>
       <i class="devicon-postman-plain"></i>
       <i class="devicon-figma-plain"></i>
       <i className="devicon-git-plain colored"></i>
