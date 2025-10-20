@@ -10,12 +10,12 @@ const Contact = () => {
   const [state, handleSubmit] = useForm("xrgvvdlo");
 
   return (
-    <section className="contact-us" id="ContactUs">
+    <section className="contact-us" >
       <h1 className="title">
         <span className="icon-envelope"> </span>
         Contact us
       </h1>
-      <p className="sub-title">
+      <p className="sub-title" id="ContactUs">
         Contact us for more information and Get notified when I publish
         something new.
       </p>
