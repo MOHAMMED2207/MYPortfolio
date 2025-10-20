@@ -104,15 +104,16 @@ const Header = () => {
                 </Link>
               </li>
               
-               <li>
-                <Link
-                  onClick={() => handleLinkClick("Contact Us")}
-                  className={activeLink === "Contact Us" ? "active" : ""}
-                  to="#ContactUs"
-                >
-                  Contact Us
-                </Link>
-              </li>
+            <li>
+  <a
+    href="#ContactUs"
+    onClick={() => handleLinkClick("Contact Us")}
+    className={activeLink === "Contact Us" ? "active" : ""}
+  >
+    Contact Us
+  </a>
+</li>
+
             </ul>
           </nav>
 
