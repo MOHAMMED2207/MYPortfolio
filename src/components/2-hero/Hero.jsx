@@ -3,7 +3,6 @@ import "./hero.css";
 import devAnimation from "../../animation/dev.json";
 import { Link } from "react-router-dom";
 import LazyLoad from "react-lazyload";
-import "../public/fonts/style.css";
 
 const Hero = () => {
   return (
