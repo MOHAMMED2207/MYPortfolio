@@ -71,16 +71,19 @@ const Hero = () => {
             aria-label="LinkedIn"
           ></a>
         </div>
-<div className="skills-icons flex">
-  <i className="icon-js" title="JavaScript"></i>
-  <i className="icon-react" title="React.js"></i>
-  <i className="icon-nextjs" title="Next.js"></i>
-  <i className="icon-nodejs" title="Node.js"></i>
-  <i className="icon-mongodb" title="MongoDB"></i>
-  <i className="icon-tailwind" title="Tailwind CSS"></i>
-  <i className="icon-git" title="Git"></i>
-  <i className="icon-vscode" title="VS Code"></i>
-</div>
+
+        {/* 🔸 أيقونات المهارات */}
+        <div className="skills-icons flex">
+          <i className="icon-js" title="JavaScript"></i>
+          <i className="icon-react" title="React.js"></i>
+          <i className="icon-nextjs" title="Next.js"></i>
+          <i className="icon-nodejs" title="Node.js"></i>
+          <i className="icon-mongodb" title="MongoDB"></i>
+          <i className="icon-tailwind" title="Tailwind CSS"></i>
+          <i className="icon-git" title="Git"></i>
+          <i className="icon-vscode" title="VS Code"></i>
+        </div>
+      </div> {/* ✅ ← أضفنا ده لقفل الجزء الأيسر */}
 
       {/* 🔹 الجزء الأيمن */}
       <div className="right-section animation">
