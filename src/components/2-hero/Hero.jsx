@@ -53,27 +53,28 @@ const Hero = () => {
             <div className="icon icon-linkedin"></div>
           </Link>
         </div>
- <div className="devicon flex gap-6 text-5xl justify-center items-center mt-10">
-      <i className="devicon-html5-plain colored"></i>
-      <i className="devicon-css3-plain colored"></i>
-      <i class="devicon-sass-original colored"></i>
-      <i className="devicon-javascript-plain colored"></i>
+ <div className="devicon flex gap-6 text-5xl flex-wrap items-center mt-10">
+      <i class="devicon-npm-plain colored"></i>
       <i class="devicon-react-original colored"></i>
       <i class="devicon-nextjs-plain"></i>
+      <i className="devicon-javascript-plain colored"></i>
       <i class="devicon-redux-original colored"></i>
-   <i class="devicon-npm-plain colored"></i>
-
+   
       <i class="devicon-nodejs-plain-wordmark colored"></i>
-<i class="devicon-mongodb-plain colored"></i>
-      <i class="devicon-azuresqldatabase-plain"></i>
-<i class="devicon-mysql-original"></i>
+      <i class="devicon-mongodb-plain colored"></i>
+      <i class="devicon-express-original"></i>
+
+      <i class="devicon-mysql-original"></i>
+      <i class="devicon-microsoftsqlserver-plain colored"></i>
       <i class="devicon-postman-plain"></i>
+   
+      <i className="devicon-tailwindcss-plain colored"></i>
+      <i class="devicon-sass-original colored"></i>
       <i class="devicon-figma-plain"></i>
+   
       <i className="devicon-git-plain colored"></i>
       <i className="devicon-github-original"></i>
       <i className="devicon-vscode-plain colored"></i>
-      <i className="devicon-tailwindcss-plain colored"></i>
-      <i className="devicon-nextjs-original colored"></i>
     </div>
     </div>
 
