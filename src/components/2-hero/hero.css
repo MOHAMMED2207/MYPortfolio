@@ -111,3 +111,8 @@ section.hero .animation {
     top: 14%;
 } */
 }
+.devicon-react-original:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
