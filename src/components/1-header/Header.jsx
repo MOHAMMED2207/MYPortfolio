@@ -1,20 +1,26 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import "./header.css";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 
 const Header = () => {
-  const storedActiveLink = localStorage.getItem("activeLink") || "home";
-  const [activeLink, setActiveLink] = useState(storedActiveLink);
+  const location = useLocation(); // لمعرفة المسار الحالي
+  const [activeLink, setActiveLink] = useState("");
+
+  useEffect(() => {
+    // استخراج المسار الحالي من URL
+    const currentPath = location.pathname;
+
+    if (currentPath === "/") setActiveLink("Home");
+    else if (currentPath.includes("About")) setActiveLink("About");
+    else if (currentPath.includes("uses")) setActiveLink("uses");
+    else setActiveLink("");
+  }, [location.pathname]); // يحدث تلقائيًا عند تغيير الصفحة
 
   const handleLinkClick = (link) => {
     setActiveLink(link);
   };
-
-  useEffect(() => {
-    localStorage.setItem("activeLink", activeLink);
-  }, [activeLink]);
 
   const [showModal, setshowModal] = useState(false);
   const [theme, setTheme] = useState(
@@ -47,11 +53,7 @@ const Header = () => {
   return (
     <div className="navElement">
       <header className={showHeder ? "header flex" : "header_sticyy flex"}>
-        <Link
-          onClick={() => handleLinkClick("Home")}
-          to="/"
-          className="linklogo"
-        >
+        <Link onClick={() => handleLinkClick("Home")} to="/" className="linklogo">
           <motion.img
             initial={{ transform: "scale(0)" }}
             animate={{ transform: "scale(1.1)" }}
@@ -63,69 +65,63 @@ const Header = () => {
           />
           <h4>MOHAMMAD</h4>
         </Link>
+
         <div className="sec_flex">
           <button
-            onClick={() => {
-              setshowModal(true);
-            }}
+            onClick={() => setshowModal(true)}
             className="menu icon-menu flex"
           ></button>
-          <div />
 
           <nav>
             <ul className="flex">
-                 <li>
+              <li>
                 <Link
-                  onClick={() => handleLinkClick("/")}
-                  className={activeLink === "/" ? "active" : ""}
+                  onClick={() => handleLinkClick("Home")}
+                  className={activeLink === "Home" ? "active" : ""}
                   to="/"
                 >
                   Home
                 </Link>
               </li>
+
               <li>
                 <Link
                   onClick={() => handleLinkClick("About")}
                   className={activeLink === "About" ? "active" : ""}
-                  to="./About"
+                  to="/About"
                 >
                   About
                 </Link>
               </li>
-              
-            
+
               <li>
                 <Link
                   onClick={() => handleLinkClick("uses")}
                   className={activeLink === "uses" ? "active" : ""}
-                  to="./uses"
+                  to="/uses"
                 >
                   Uses
                 </Link>
               </li>
-              
-            <li>
-  <a
-    href="#ContactUs"
-    onClick={() => handleLinkClick("Contact Us")}
-    className={activeLink === "Contact Us" ? "active" : ""}
-  >
-    Contact Us
-  </a>
-</li>
 
+              <li>
+                <a
+                  href="#ContactUs"
+                  onClick={() => handleLinkClick("Contact Us")}
+                  className={activeLink === "Contact Us" ? "active" : ""}
+                >
+                  Contact Us
+                </a>
+              </li>
             </ul>
           </nav>
 
           <button
             onClick={() => {
-              // Send value to LS
               localStorage.setItem(
                 "currentMode",
                 theme === "dark" ? "light" : "dark"
               );
-
-              // get value from LS
               setTheme(localStorage.getItem("currentMode"));
             }}
             className="mode flex"
@@ -144,9 +140,7 @@ const Header = () => {
               <li>
                 <button
                   className="icon-close"
-                  onClick={() => {
-                    setshowModal(false);
-                  }}
+                  onClick={() => setshowModal(false)}
                 />
               </li>
 
@@ -154,7 +148,7 @@ const Header = () => {
                 <Link
                   onClick={() => handleLinkClick("About")}
                   className={activeLink === "About" ? "active2" : ""}
-                  to="./About"
+                  to="/About"
                 >
                   About
                 </Link>
@@ -162,36 +156,9 @@ const Header = () => {
 
               <li>
                 <Link
-                  onClick={() => handleLinkClick("Articles")}
-                  className={activeLink === "Articles" ? "active2" : ""}
-                  to=""
-                >
-                  Articles
-                </Link>
-              </li>
-              <li>
-                <Link
-                  onClick={() => handleLinkClick("Projects")}
-                  className={activeLink === "Projects" ? "active2" : ""}
-                  to="#Projects"
-                >
-                  Projects
-                </Link>
-              </li>
-              <li>
-                <Link
-                  onClick={() => handleLinkClick("Speaking")}
-                  className={activeLink === "Speaking" ? "active2" : ""}
-                  to=""
-                >
-                  Speaking
-                </Link>
-              </li>
-              <li>
-                <Link
                   onClick={() => handleLinkClick("uses")}
                   className={activeLink === "uses" ? "active2" : ""}
-                  to="./uses"
+                  to="/uses"
                 >
                   Uses
                 </Link>
