@@ -111,11 +111,11 @@ section.hero .animation {
     top: 14%;
 } */
 }
-.devicon li:hover {
+.devicon i:hover {
   transform: scale(1.2);
   transition: 0.3s;
 }
-.devicon li{
+.devicon i{
 font-size: 22px;
 }
 
