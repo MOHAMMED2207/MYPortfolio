@@ -83,16 +83,6 @@ const Header = () => {
                   About
                 </Link>
               </li>
-
-              <li>
-                <Link
-                  onClick={() => handleLinkClick("Articles")}
-                  className={activeLink === "Articles" ? "active" : ""}
-                  to=""
-                >
-                  Articles
-                </Link>
-              </li>
               <li>
                 <Link
                   onClick={() => handleLinkClick("Projects")}
