@@ -1205,7 +1205,6 @@ video {
   margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .space-y-16 > :not([hidden]) ~ :not([hidden]) {
@@ -2251,3 +2250,4 @@ video {
     stroke: #14b8a6;
   }
 }
+
