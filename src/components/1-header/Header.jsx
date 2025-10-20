@@ -110,7 +110,7 @@ const Header = () => {
                   className={activeLink === "Contact Us" ? "active" : ""}
                   to="#ContactUs"
                 >
-                  Uses
+                  Contact Us
                 </Link>
               </li>
             </ul>
