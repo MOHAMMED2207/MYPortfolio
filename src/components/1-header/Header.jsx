@@ -74,6 +74,15 @@ const Header = () => {
 
           <nav>
             <ul className="flex">
+                 <li>
+                <Link
+                  onClick={() => handleLinkClick("/")}
+                  className={activeLink === "/" ? "active" : ""}
+                  to="/"
+                >
+                  Home
+                </Link>
+              </li>
               <li>
                 <Link
                   onClick={() => handleLinkClick("About")}
@@ -90,6 +99,16 @@ const Header = () => {
                   onClick={() => handleLinkClick("uses")}
                   className={activeLink === "uses" ? "active" : ""}
                   to="./uses"
+                >
+                  Uses
+                </Link>
+              </li>
+              
+               <li>
+                <Link
+                  onClick={() => handleLinkClick("Contact Us")}
+                  className={activeLink === "Contact Us" ? "active" : ""}
+                  to="#ContactUs"
                 >
                   Uses
                 </Link>
