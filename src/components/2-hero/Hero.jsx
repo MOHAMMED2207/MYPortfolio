@@ -51,7 +51,36 @@ const Hero = () => {
             <div className="icon icon-linkedin"></div>
           </Link>
         </div>
-      </div>
+      
+<div className="all-icons flex">
+  {/* social media icons */}
+  <div className="icon icon-twitter"></div>
+  <Link to="https://www.instagram.com/moo_mohammed_64/" target="_blank">
+    <div className="icon icon-instagram"></div>
+  </Link>
+
+  <Link to="https://github.com/MOHAMMED2207" target="_blank">
+    <div className="icon icon-github"></div>
+  </Link>
+
+  <Link
+    to="https://www.linkedin.com/in/mohammed-abd-alfatah-58959a256/"
+    target="_blank"
+  >
+    <div className="icon icon-linkedin"></div>
+  </Link>
+</div>
+
+{/* ===== New Section for Programming Languages ===== */}
+<div className="skills-icons flex">
+  <img src="/icons/html.svg" alt="HTML" title="HTML" />
+  <img src="/icons/css.svg" alt="CSS" title="CSS" />
+  <img src="/icons/js.svg" alt="JavaScript" title="JavaScript" />
+  <img src="/icons/react.svg" alt="React" title="React" />
+  <img src="/icons/nodejs.svg" alt="Node.js" title="Node.js" />
+  <img src="/icons/mongodb.svg" alt="MongoDB" title="MongoDB" />
+  <img src="/icons/git.svg" alt="Git" title="Git" />
+</div>
 
 
   
