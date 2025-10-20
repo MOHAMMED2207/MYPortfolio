@@ -48,7 +48,6 @@ const Hero = () => {
           <Link to="https://www.instagram.com/moo_mohammed_64/" target="_blank">
             <div className="icon icon-instagram"></div>
           </Link>
-@@ -50,8 +53,20 @@ const Hero = () => {
             <div className="icon icon-linkedin"></div>
           </Link>
         </div>
