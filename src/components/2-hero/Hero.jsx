@@ -53,7 +53,7 @@ const Hero = () => {
             <div className="icon icon-linkedin"></div>
           </Link>
         </div>
- <div className="flex gap-6 text-5xl justify-center items-center mt-10">
+ <div className="devicon flex gap-6 text-5xl justify-center items-center mt-10">
       <i className="devicon-html5-plain colored"></i>
       <i className="devicon-css3-plain colored"></i>
       <i class="devicon-sass-original colored"></i>
