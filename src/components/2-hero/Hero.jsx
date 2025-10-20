@@ -72,7 +72,9 @@ const Hero = () => {
             <i className="devicon-npm-plain colored"></i>
             <i className="devicon-react-original colored"></i>
             <i className="devicon-nextjs-plain"></i>
-            <i className="devicon-javascript-plain colored"></i>
+            <i className="devicon-javascript-plain colored"></i>  
+            <i class="devicon-typescript-plain colored"></i>
+          
 
             <i
               className={`devicon-redux-original ${
