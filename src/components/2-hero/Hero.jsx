@@ -33,8 +33,10 @@ const Hero = () => {
           Bring Vision Into Reality.
         </p>
 
-        <div className="flex flex-col gap-2">
-        <div className="all-icons flex">
+        <div className="flex flex-col gap-6 justify-start items-start">
+
+          
+        <div className="all-icons flex ">
           <div className="icon icon-twitter"></div>
           <Link to="https://www.instagram.com/moo_mohammed_64/" target="_blank">
             <div className="icon icon-instagram"></div>
@@ -64,10 +66,23 @@ const Hero = () => {
  <div className="flex gap-6 text-5xl justify-center items-center mt-10">
       <i className="devicon-html5-plain colored"></i>
       <i className="devicon-css3-plain colored"></i>
+   <i class="devicon-sass-original colored"></i>
+
       <i className="devicon-javascript-plain colored"></i>
-      <i className="devicon-react-original colored"></i>
-      <i className="devicon-nodejs-plain colored"></i>
-      <i className="devicon-mongodb-plain colored"></i>
+<i class="devicon-react-original colored"></i>
+   <i class="devicon-nextjs-plain"></i>
+<i class="devicon-redux-original colored"></i>
+
+<i class="devicon-nodejs-plain-wordmark colored"></i>
+<i class="devicon-mongodb-plain-wordmark colored"></i> 
+   
+   <i class="devicon-azuresqldatabase-plain"></i>
+<i class="devicon-mysql-plain-wordmark"></i>
+
+         <i class="devicon-postman-plain"></i>
+
+          <i class="devicon-figma-plain"></i>
+
       <i className="devicon-git-plain colored"></i>
       <i className="devicon-github-original"></i>
       <i className="devicon-vscode-plain colored"></i>
