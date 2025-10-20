@@ -1,10 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-
 import React, { useEffect, useState } from "react";
 import "./footer.css";
 import { Link } from "react-router-dom";
+
 const Footer = () => {
-  const storedActiveLink = localStorage.getItem("activeLink") || "home";
+  const storedActiveLink = localStorage.getItem("activeLink") || "About";
   const [activeLink, setActiveLink] = useState(storedActiveLink);
 
   const handleLinkClick = (link) => {
@@ -16,13 +16,13 @@ const Footer = () => {
   }, [activeLink]);
 
   return (
-    <footer className="flex">
-      <ul className="flex">
+    <footer className="flex flex-col items-center gap-4 p-4 border-t border-zinc-200 dark:border-zinc-700 text-sm text-zinc-600 dark:text-zinc-400">
+      <ul className="flex gap-6">
         <li>
           <Link
+            to="/About"
             onClick={() => handleLinkClick("About")}
             className={activeLink === "About" ? "active" : ""}
-            href="./About"
           >
             About
           </Link>
@@ -30,43 +30,18 @@ const Footer = () => {
 
         <li>
           <Link
-            onClick={() => handleLinkClick("Articles")}
-            className={activeLink === "Articles" ? "active" : ""}
-            href=""
-          >
-            Articles
-          </Link>
-        </li>
-        <li>
-          <Link
-            onClick={() => handleLinkClick("Projects")}
-            className={activeLink === "Projects" ? "active" : ""}
-            href="#Projects"
-          >
-            Projects
-          </Link>
-        </li>
-        <li>
-          <Link
-            onClick={() => handleLinkClick("Speaking")}
-            className={activeLink === "Speaking" ? "active" : ""}
-            href=""
-          >
-            Speaking
-          </Link>
-        </li>
-        <li>
-          <Link
-            onClick={() => handleLinkClick("uses")}
-            className={activeLink === "uses" ? "active" : ""}
-            href="./uses"
+            to="/uses"
+            onClick={() => handleLinkClick("Uses")}
+            className={activeLink === "Uses" ? "active" : ""}
           >
             Uses
           </Link>
         </li>
       </ul>
 
-      <p>© 2023 Spencer Sharp. All rights reserved.</p>
+      <p className="text-xs text-center">
+        © 2025 Mohammed Abdul Fatah. All rights reserved.
+      </p>
     </footer>
   );
 };
