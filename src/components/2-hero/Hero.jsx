@@ -1,7 +1,6 @@
 import Lottie from "lottie-react";
 import "./hero.css";
 import devAnimation from "../../animation/dev.json";
-import { Link } from "react-router-dom";
 import LazyLoad from "react-lazyload";
 
 const Hero = () => {
@@ -37,54 +36,52 @@ const Hero = () => {
           into reality.
         </p>
 
-   
-  {/* 🔹 الأيقونات الاجتماعية */}
+        {/* 🔹 الأيقونات الاجتماعية */}
         <div className="all-icons flex">
-          <div className="icon icon-twitter"></div>
-          <Link to="https://twitter.com/" target="_blank">
-            <div className="icon icon-twitter"></div>
-          </Link>
+          <a
+            href="https://twitter.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icon icon-twitter"
+            aria-label="Twitter"
+          ></a>
 
-          <Link to="https://www.instagram.com/moo_mohammed_64/" target="_blank">
-            <div className="icon icon-instagram"></div>
-          </Link>
-            <div className="icon icon-linkedin"></div>
-          </Link>
+          <a
+            href="https://www.instagram.com/moo_mohammed_64/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icon icon-instagram"
+            aria-label="Instagram"
+          ></a>
+
+          <a
+            href="https://github.com/MOHAMMED2207"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icon icon-github"
+            aria-label="GitHub"
+          ></a>
+
+          <a
+            href="https://www.linkedin.com/in/mohammed-abd-alfatah-58959a256/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="icon icon-linkedin"
+            aria-label="LinkedIn"
+          ></a>
         </div>
-      
-<div className="all-icons flex">
-  {/* social media icons */}
-  <div className="icon icon-twitter"></div>
-  <Link to="https://www.instagram.com/moo_mohammed_64/" target="_blank">
-    <div className="icon icon-instagram"></div>
-  </Link>
 
-  <Link to="https://github.com/MOHAMMED2207" target="_blank">
-    <div className="icon icon-github"></div>
-  </Link>
-
-  <Link
-    to="https://www.linkedin.com/in/mohammed-abd-alfatah-58959a256/"
-    target="_blank"
-  >
-    <div className="icon icon-linkedin"></div>
-  </Link>
-</div>
-
-{/* ===== New Section for Programming Languages ===== */}
-<div className="skills-icons flex">
-  <img src="/icons/html.svg" alt="HTML" title="HTML" />
-  <img src="/icons/css.svg" alt="CSS" title="CSS" />
-  <img src="/icons/js.svg" alt="JavaScript" title="JavaScript" />
-  <img src="/icons/react.svg" alt="React" title="React" />
-  <img src="/icons/nodejs.svg" alt="Node.js" title="Node.js" />
-  <img src="/icons/mongodb.svg" alt="MongoDB" title="MongoDB" />
-  <img src="/icons/git.svg" alt="Git" title="Git" />
-</div>
-
-
-  
-
+        {/* ===== New Section for Programming Languages ===== */}
+        <div className="skills-icons flex">
+          <img src="/icons/html.svg" alt="HTML" title="HTML" />
+          <img src="/icons/css.svg" alt="CSS" title="CSS" />
+          <img src="/icons/js.svg" alt="JavaScript" title="JavaScript" />
+          <img src="/icons/react.svg" alt="React" title="React" />
+          <img src="/icons/nodejs.svg" alt="Node.js" title="Node.js" />
+          <img src="/icons/mongodb.svg" alt="MongoDB" title="MongoDB" />
+          <img src="/icons/git.svg" alt="Git" title="Git" />
+        </div>
+      </div>
 
       {/* 🔹 الجزء الأيمن */}
       <div className="right-section animation">
@@ -99,4 +96,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
