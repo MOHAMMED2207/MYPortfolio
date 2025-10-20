@@ -37,49 +37,25 @@ const Hero = () => {
           into reality.
         </p>
 
-        {/* 🔹 الأيقونات الاجتماعية */}
+   
+  {/* 🔹 الأيقونات الاجتماعية */}
         <div className="all-icons flex">
-          <a
-            href="https://twitter.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="icon icon-twitter"
-            aria-label="Twitter"
-          ></a>
+          <div className="icon icon-twitter"></div>
+          <Link to="https://twitter.com/" target="_blank">
+            <div className="icon icon-twitter"></div>
+          </Link>
 
-          <a
-            href="https://www.instagram.com/moo_mohammed_64/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="icon icon-instagram"
-            aria-label="Instagram"
-          ></a>
-
-          <a
-            href="https://github.com/MOHAMMED2207"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="icon icon-github"
-            aria-label="GitHub"
-          ></a>
-
-          <a
-            href="https://www.linkedin.com/in/mohammed-abd-alfatah-58959a256/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="icon icon-linkedin"
-            aria-label="LinkedIn"
-          ></a>
+          <Link to="https://www.instagram.com/moo_mohammed_64/" target="_blank">
+            <div className="icon icon-instagram"></div>
+          </Link>
+@@ -50,8 +53,20 @@ const Hero = () => {
+            <div className="icon icon-linkedin"></div>
+          </Link>
         </div>
+      </div>
 
-        <div className="skills-icons flex">
-  <i className="fa-brands fa-js" title="JavaScript"></i>
-  <i className="fa-brands fa-react" title="React.js"></i>
-  <i className="fa-brands fa-node-js" title="Node.js"></i>
-  <i className="fa-brands fa-git-alt" title="Git"></i>
-  <i className="fa-brands fa-css3-alt" title="Tailwind CSS"></i>
-  <i className="fa-brands fa-vuejs" title="VS Code"></i>
-</div>
+
+  
 
 
       {/* 🔹 الجزء الأيمن */}
