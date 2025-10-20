@@ -52,6 +52,45 @@ const Hero = () => {
         </div>
       </div>
 
+
+
+
+
+
+
+
+
+ <div className="flex gap-6 text-5xl justify-center items-center mt-10">
+      <i className="devicon-html5-plain colored"></i>
+      <i className="devicon-css3-plain colored"></i>
+      <i className="devicon-javascript-plain colored"></i>
+      <i className="devicon-react-original colored"></i>
+      <i className="devicon-nodejs-plain colored"></i>
+      <i className="devicon-mongodb-plain colored"></i>
+      <i className="devicon-git-plain colored"></i>
+      <i className="devicon-github-original"></i>
+      <i className="devicon-vscode-plain colored"></i>
+      <i className="devicon-tailwindcss-plain colored"></i>
+      <i className="devicon-nextjs-original colored"></i>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
       <div className="right-section animation">
         <Lottie
           animationData={devAnimation}
