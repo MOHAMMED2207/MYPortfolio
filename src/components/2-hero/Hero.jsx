@@ -13,7 +13,11 @@ useEffect(() => {
   if (storedTheme) {
     setTheme(storedTheme);
   }
+<<<<<<< HEAD
 }, [ ]); // empty dependency array -> run once on mount
+=======
+}, []); // empty dependency array -> run once on mount
+>>>>>>> 496ba5da391eaf04a2bf14fbb64addf53889091e
 
 
   return (
