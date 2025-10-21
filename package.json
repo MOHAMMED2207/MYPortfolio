@@ -28,9 +28,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "engines": {
-    "node": "18.x"
-  },
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -43,6 +40,9 @@
       "not dead",
       "not op_mini all"
     ],
+    "engines": {
+      "node": "22.x"
+    },
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
