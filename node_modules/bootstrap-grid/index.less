@@ -1,0 +1,16 @@
+/*!
+ * bootstrap-grid 3.0.0
+ * Copyright 2015-present, Santeri Hiltunen
+ * Licensed under MIT (https://github.com/Hilzu/bootstrap-grid/blob/master/LICENSE)
+ */
+
+@import "node_modules/bootstrap/less/variables.less";
+@import "node_modules/bootstrap/less/mixins.less";
+@import "node_modules/bootstrap/less/responsive-utilities.less";
+
+// Make &:extend(.clearfix all); work without having to pull whole utilities.less from bootstrap
+.clearfix {
+  .clearfix();
+}
+
+@import "node_modules/bootstrap/less/grid.less";

@@ -137,3 +137,41 @@ textarea::placeholder {
     align-self: center;
   }
 }
+
+.stylev1 {
+  background-color: rgba(63, 63, 70, 0.15);
+  border: 1px solid rgba(128, 128, 128, 0.451);
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: 0.3s;
+  font-size: 1.1rem;
+  color: var(--subtitle);
+}
+
+.txtv1 {
+  color: black
+}
+
+input:focus {
+            outline: none;
+            border-color: #2dd4bf;
+}
+input:hover {
+            border-color: #2dd4bf;
+}
+
+select:focus {
+            outline: none;
+            border-color: #2dd4bf;
+}
+select:hover {
+            border-color: #2dd4bf;
+}
+textarea:focus {
+            outline: none;
+            border-color: #2dd4bf;
+}
+textarea:hover {
+            border-color: #2dd4bf;
+}
