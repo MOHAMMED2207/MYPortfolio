@@ -44,7 +44,7 @@ const Contact = () => {
       }, 3000); // 3 ثواني
       return () => clearTimeout(timer);
     }
-  }, []);
+  }, [state]);
 
   // عرض الأسئلة الديناميكية
   const renderExtraQuestions = () => {
