@@ -24,6 +24,18 @@ export const myProjects = [
     link: "https://movies-clon.vercel.app",
   },
   {
+    id: 200,
+    category: ["react", "js", "node"],
+    title: "Notes App ",
+    title2: "A simple Notes App to create, edit, and organize your notes with tags and search.",
+    para1: "#html",
+    para2: "#css",
+    para3: "#js",
+    para4: "#bootstrap",
+    img: "/img/img-pro/Screenshot 2025-10-26 014546.png",
+    link: "https://movies-clon.vercel.app",
+  },
+  {
     id: 0,
     category: ["css"],
     title: "E-commerce Shop",
@@ -33,7 +45,7 @@ export const myProjects = [
     para3: "#js",
     para4: "#bootstrap",
     img: "/img/img-pro/Screenshot 2023-05-07 105731.png",
-    link: "https://shop-ecommers.vercel.app/",
+    link: "https://notes-app-mocha-eight.vercel.app/",
   },
   {
     id: 1,
