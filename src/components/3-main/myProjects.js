@@ -33,7 +33,7 @@ export const myProjects = [
     para3: "#js",
     para4: "#bootstrap",
     img: "/img/img-pro/Screenshot 2025-10-26 014546.png",
-    link: "https://movies-clon.vercel.app",
+    link: "https://notes-app-mocha-eight.vercel.app",
   },
   {
     id: 0,
